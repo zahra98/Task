@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-//    var Money : Double;
-//    var Snack_number : Int;
+    @State var Money: String=" "
+    @State var Snack_number: String=" "
     var body: some View {
   
         VStack{
@@ -55,16 +55,20 @@ struct ContentView: View {
             }
             HStack{
                 Text("Money").padding()
-                TextField("Mony", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                
+                TextField("Money", text: $Money)
 
             }
             HStack{
                 Text("Snack").padding()
-                TextField("Snack", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                TextField("Snack", text: $Snack_number)
                
             }
         
-          
+            Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
+                Text("Purchase")
+            }
+            
         }
         
         
