@@ -8,9 +8,67 @@
 import SwiftUI
 
 struct ContentView: View {
+//    var Money : Double;
+//    var Snack_number : Int;
     var body: some View {
-        Text("Hello, vending machine!")
-            .padding()
+  
+        VStack{
+            HStack{
+        Text("1").padding()
+        Text("2").padding()
+        Text("3").padding()
+        Text("4").padding()
+        Text("5").padding()
+               
+            }
+            HStack{
+        Text("6").padding()
+        Text("7").padding()
+        Text("8").padding()
+        Text("9").padding()
+        Text("10").padding()
+               
+            }
+            HStack{
+        Text("11").padding()
+        Text("12").padding()
+        Text("13").padding()
+        Text("14").padding()
+        Text("15").padding()
+               
+            }
+            HStack{
+        Text("16").padding()
+        Text("17").padding()
+        Text("18").padding()
+        Text("19").padding()
+        Text("20").padding()
+               
+            }
+            HStack{
+        Text("21").padding()
+        Text("22").padding()
+        Text("23").padding()
+        Text("24").padding()
+        Text("25").padding()
+               
+            }
+            HStack{
+                Text("Money").padding()
+                TextField("Mony", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+
+            }
+            HStack{
+                Text("Snack").padding()
+                TextField("Snack", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+               
+            }
+        
+          
+        }
+        
+        
+        
     }
 }
 
